@@ -13,3 +13,19 @@ Privacy-preserving Outsourced Deep Neural Network Dual-cloud Training using Secr
 1. 在資料收集時，Data Owners 皆傳送經過加密的 Data，因此 Trainer 或任何竊聽者皆無法從訓練資料取得任何私人訊息。
 2. Trainer 可以將 DNN 訓練的計算授權給雲端伺服器執行，並確保完成訓練的 Model 不會洩漏。
 3. 經過此算法得出的 DNN 模型，效能與不經過任何加密的訓輛方法得出的模型幾乎相同。
+
+Title: Privacy-Preserving Outsourced Deep Neural Network Dual-Cloud Training using Secret Sharing
+
+Training Sets: MNIST, Fashion MNIST
+
+In recent years, significant breakthroughs have been achieved in deep neural networks (DNNs) across various domains such as face recognition, natural language processing, object detection, and object classification. With the development of data science and the continuous expansion of dataset sizes, the requirements for computational power and storage space in DNN training have also increased. While GPUs and training methods have been optimized over the years, storage space demands remain a substantial cost. To mitigate costs, it is essential to centralize datasets in cloud storage and engage in interactive training with cloud servers.
+
+Storing data in cloud spaces brings forth the paramount concern of data security. Datasets used for DNN training are typically collected from various institutions and often contain sensitive information. To prevent the leakage of private information, data must be encrypted before being transmitted to cloud storage (or protected through some means).
+
+This study primarily employs lightweight secret sharing to achieve privacy-preserving authorized DNN training. Using secret sharing, training data and models are split into two shares and authorized for operation by two cloud servers. As the computational processes of model training run on cloud servers, the model trainer can significantly reduce computational and storage requirements. Consequently, model trainers may include users with lower computational capabilities, such as those using smart wearable devices.
+
+Key Contributions:
+
+During data collection, data owners transmit encrypted data, ensuring that trainers or any potential eavesdroppers cannot access any private information from the training data.
+Trainers can authorize the execution of DNN training computations to cloud servers, ensuring that the completed model does not leak sensitive information.
+The DNN models derived from this algorithm exhibit performance almost equivalent to models obtained through training without any encryption.
